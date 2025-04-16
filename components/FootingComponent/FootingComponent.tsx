@@ -1,5 +1,5 @@
 import React from 'react'
-import { Mail, } from "lucide-react"
+import { Mail } from "lucide-react"
 import InstagramSvg from '../../public/InstagramSvg';
 import styles from './FootinComponent.module.css'
 
