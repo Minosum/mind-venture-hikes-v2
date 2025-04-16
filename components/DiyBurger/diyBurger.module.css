@@ -1,0 +1,146 @@
+.navLinksHide,
+.burgerMenuContainer {
+    top: 0;
+    left: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.navLinksShow {
+    display: none;
+}
+
+.navLinksHide nav {
+    height: 0px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.noStyleLink {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .burgerMenuContainer {
+        display: flex;
+        color: white;
+        justify-content: space-around;
+        height: 50px;
+        background-color:  #065f46; 
+        opacity: 1;
+        align-items: center;
+        padding: 15px;
+        position: sticky;
+    }
+
+    .burgerContainer {
+        display: flex;
+        justify-content: right;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .logoContainer {
+        display: flex;
+        gap: 20px;
+        z-index: 11;
+        align-items: center;
+    }
+
+    .burgerIcon {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .burgerLine {
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        margin: 3px 0;
+        transition: all 0.3s ease;
+    }
+
+    .burgerMenu {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        z-index: 12;
+    }
+
+    .navLinksShow {
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        top: 0;
+        width: 100%;
+        background-color: black;
+        animation: slideOpen 0.5s ease-out forwards;
+    }
+
+    .navLinksHide {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        z-index: 10;
+        animation: slideClose 0.5s ease-out forwards;
+        height: 0vh;
+        overflow: hidden;
+    }
+
+    .navLinksShow::-webkit-scrollbar {
+        display: none;
+    }
+
+    .burgerMenuContainerOpen {
+        position: sticky;
+        z-index: 10000;
+    }
+    
+    .open .burgerLine:nth-child(1) {
+        transform: rotate(-45deg) translate(-4px, 4px);
+    }
+
+    .open .burgerLine:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    .open .burgerLine:nth-child(3) {
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
+
+
+    @keyframes slideOpen {
+        0% {
+            height: 0vh;
+            opacity: 0;
+        }
+
+        100% {
+            height: 100vh;
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideClose {
+        0% {
+            height: 100vh;
+            opacity: 1;
+        }
+
+        100% {
+            height: 0vh;
+            opacity: 0;
+        }
+    }
+}

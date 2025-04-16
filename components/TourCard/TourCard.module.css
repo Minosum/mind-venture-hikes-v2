@@ -1,0 +1,86 @@
+
+.tourCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 400px;
+  margin: 0 auto;
+  color: white;
+}
+
+.tourCardImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.tourCardContent {
+  padding: 16px;
+  text-align: center;
+}
+
+.tourCardTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 32px;
+  
+}
+
+.tourCardLocation,
+.tourCardDate,
+.tourCardGrade,
+.tourCardPricing,
+.tourCardSpots {
+  margin-bottom: 8px;
+}
+
+.tourCardPricing {
+  display: flex;
+  justify-content: center;
+}
+
+.tourCardActions {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.tourCardViewTrip,
+.tourCardBookNow {
+  display: inline-block;
+  padding: 16px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tourCardViewTrip {
+  background-color: #065f46;
+  color: #fff;
+}
+
+.tourCardBookNow {
+  background-color: #f1c40f;
+  color: #333;
+}
+
+@media (max-width: 767px) {
+  .tourCard {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .tourCardImage {
+    width: 100%px;
+    height: auto;
+  }
+
+  .tourCardContent {
+    flex: 1;
+    padding: 16px;
+    padding-top: 32px;
+  }
+}

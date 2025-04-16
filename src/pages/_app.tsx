@@ -1,6 +1,22 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
+import DiyBurger from "../../components/DiyBurger/DiyBurger";
+import FootingComponent from "../../components/FootingComponent/FootingComponent";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+    return (
+        <div>   
+            <header>
+                <DiyBurger />
+            </header>
+            <main>
+                <Component {...pageProps} />
+            </main>
+            <footer>
+                <FootingComponent />
+            </footer>
+        </div>
+    )
+
+
 }

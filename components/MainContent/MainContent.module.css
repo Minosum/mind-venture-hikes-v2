@@ -1,0 +1,147 @@
+.navBar {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background: url('/images/background.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.navBarContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.navBarLinks {
+    margin-top: 25rem;
+}
+
+
+
+.socials {
+    padding-top: 1rem;
+}
+
+.joinTripButtonContainer {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.linkStyles:visited {
+    color: white;
+}
+
+
+
+@keyframes fadeOutLetters {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.navTitle {
+    /* margin-top: 10%; */
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+    z-index: 2;
+    padding: 1rem 1rem;
+    color: white;
+    display: flex;
+    background: rgba(13, 101, 45, .5);
+    line-height: 120%;
+    flex-direction: column;
+}
+
+.navMessageContainer {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navMessage {
+        background-color: rgba(0, 0, 0, 0.7);
+        margin: 1rem;
+        padding: 1.2rem;
+        font-size: 18px;
+        line-height: 150%;
+        border-radius: 5px;
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+
+    .navMessage h1 {
+        font-size: 28px;
+        padding: 2rem;
+        font-weight:bold;
+    }
+
+    .navMessageContainer {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+
+    }
+
+    .joinTripButtonContainer {
+        bottom: 100px;
+    }
+
+    .navBar {
+        /* height: auto; */
+    }
+
+    .titleAnimation {
+        font-size: 40px;
+        display: none;
+    }
+
+    .navMessage {
+        display: flex;
+
+
+    }
+
+    .navLinks {
+        display: none;
+    }
+
+    .navBarLinks {
+        display: none;
+    }
+
+    .navMessageContainer {
+        justify-content: center;
+    }
+
+    .navTitle {
+        display: none;
+        font-size: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .navBarContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .navBarContainer {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .navMessageContainer {
+        margin: 60px 0px;
+    }
+}
