@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import styles from './diyBurger.module.css'
 import NavLinks from '../NavLinks/NavLinks';
-import logo from '../../public/images/mindventureLogo.png'
+import logo from '../../public/mindventureLogo.png'
 import Image from 'next/image';
 import Link from 'next/link';
 

@@ -5,7 +5,11 @@ import FootingComponent from "../../components/FootingComponent/FootingComponent
 
 export default function App({ Component, pageProps }: AppProps) {
     return (
-        <div>   
+        <div>  
+            <head>
+            <link rel="icon" href="/favicon.ico" sizes="any" />
+                </head> 
+            
             <header>
                 <DiyBurger />
             </header>
